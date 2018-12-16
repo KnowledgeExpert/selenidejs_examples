@@ -1,0 +1,14 @@
+{
+  "name": "samael-example",
+  "scripts": {
+    "clean": "rm -rf build",
+    "compile": "tsc",
+    "pretest": "npm run clean && npm run compile",
+    "test": "node --experimental-worker node_modules/.bin/samael -t 1 build/spec.js"
+  },
+  "dependencies": {
+    "selenidejs": "0.2.8",
+    "typescript": "3.1.3",
+    "samael": "git+https://github.com/AleksanderPopov/samael.git"
+  }
+}
