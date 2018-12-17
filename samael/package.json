@@ -5,7 +5,7 @@
     "clean": "rm -rf build",
     "compile": "tsc",
     "pretest": "npm run clean && npm run compile",
-    "test": "node --experimental-worker node_modules/.bin/samael -t 4 build/spec.js",
+    "test": "node --experimental-worker node_modules/.bin/samael --threads 4 build/spec.js",
     "start": "webdriver-manager start"
   },
   "dependencies": {
